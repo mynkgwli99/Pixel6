@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* :root{
+    --myfont: 'Aerial';
+    --my-btn-font: 'Aerial';
+    --lg-lightcolor: linear-gradient(to left, rgba(116,235,213,0.6),rgba(159,172,230,0));
+    --lg-color: linear-gradient(to left, #74ebd5, #9face6);
+} */
+
+body {
+    background-image: url(backgroundimage3.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-family: 'Aerial';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+
+}
+
+.container {
+    background-color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0,034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12;
+    overflow: hidden;
+    width: 500px;
+    max-width: 100%;
+}
+
+.header {
+    background: #ff3333;
+    padding: 30px;
+}
+
+.header h2 {
+    color: #222;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.form {
+    padding: 60px;
+}
+
+.form-actions {
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.form-actions label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-actions input {
+    width: 100%;
+    border: 2px solid #f0f0f0;
+    border-radius: 5px;
+    display: block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+    padding: 15px;
+}
+
+.form-actions input:focus {
+    outline: 0;
+    border-color: #777;
+}
+
+
+.form .btn {
+    background: #2d31bd;
+    border-radius: 6px;
+    border: none;
+    outline:none;
+    color:#fff;
+    display: block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    padding: 15px 0;
+    margin-top: 20px;
+    width: 100%;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 1s ease;
+}
+
+@media(max-width:998px){
+    .container{
+        width:calc(100vw-35vw);
+        max-width: 100%;
+    }
+}
